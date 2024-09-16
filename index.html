@@ -87,11 +87,12 @@
     </style>
 </head>
 <body>
-    <h1>¡Felices 10 meses!</h1>
-    <div class="contenido">
-        <div class="texto">
-            Felices 10 meses mi princesa bonita, primero que nada muchas gracias por todo lo que haces por mí, por ser mi novia, por amarme, por todo, gracias. Sé que pues en estas últimas semanas algunos días han pasado cosas feas y así, pero nuestro amor que nos tenemos es mucho más grande que las cosas que pasamos y no pasen más cosas feas porque me da miedo. Nuestro amor es más grande que todo y ya estamos bien, y hay que seguir así de bonitos y cariñositos. Demos todo de nosotros, mi amor. Me encanta que seamos ositos cariñositos, estemos así siempre, pofavo ositos cariñositos. Cada mes a tu lado es lo mejor, es lo más bonito, cada cosa que hacemos juntos lo aprecio mucho. Somos bonitos. Eres la novia más bonita del mundo y lo más importante para mí. Eres el amor de mi vida :) Te amo mucho mi vida 🩷.
-        </div>
+    <div id="principal">
+        <h1>¡Felices 10 meses!</h1>
+        <div class="contenido">
+            <div class="texto">
+                Felices 10 meses mi princesa bonita, primero que nada muchas gracias por todo lo que haces por mí, por ser mi novia, por amarme, por todo, gracias. Sé que pues en estas últimas semanas algunos días han pasado cosas feas y así, pero nuestro amor que nos tenemos es mucho más grande que las cosas que pasamos y no pasen más cosas feas porque me da miedo. Nuestro amor es más grande que todo y ya estamos bien, y hay que seguir así de bonitos y cariñositos. Demos todo de nosotros, mi amor. Me encanta que seamos ositos cariñositos, estemos así siempre, pofavo ositos cariñositos. Cada mes a tu lado es lo mejor, es lo más bonito, cada cosa que hacemos juntos lo aprecio mucho. Somos bonitos. Eres la novia más bonita del mundo y lo más importante para mí. Eres el amor de mi vida :) Te amo mucho mi vida 🩷.
+            </div>
 
         <div class="image-section">
             <img src="imagenes/7920D7DD-21FD-4B6C-9AE5-2ED48AF04725.jpg" alt="Primera" width="200" height="300">
@@ -107,14 +108,13 @@
             <h2>Felices 10 meses mi vida</h2>
             <p>Eres mi princesa piquiñita 🩷</p>
         <img id="final-image" src="imagenes/44CE88E5-9C56-4D69-B230-3BEA15CAF5A4.jpg" alt="Piquiñita" width="300" height="400" class="final-image">
-        <p>Te amo mi piquiñita 🩷</p>
-        </div>
+         <p>Te amo mi piquiñita 🩷</p>
     </div>
 
     <script>
         function mostrarRegalo() {
-            document.querySelector(".contenido").style.display = "none";
-            document.querySelector("#mensajeRegalo").style.display = "block";
+            document.querySelector("#principal").style.display = "none";  // Oculta todo el contenido principal
+            document.querySelector("#mensajeRegalo").style.display = "block";  // Muestra el mensaje del regalo
         }
     </script>
 </body>
