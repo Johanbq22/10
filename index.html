@@ -6,119 +6,91 @@
     <title>Felices 10 Meses</title>
     <style>
         body {
-            font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
-            background: linear-gradient(135deg, #fcd5ce, #f0e6f6); /* Fondo pastel */
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            height: 100vh;
-            text-align: center;
-            overflow: hidden;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #fbc2eb, #a6c1ee); /* Fondo pastel */
         }
 
         h1 {
-            font-size: 3rem;
-            color: #d23669;
+            text-align: center;
+            font-size: 2.5em;
             margin-top: 20px;
         }
 
-        .content {
-            display: flex;
-            justify-content: space-between;
-            align-items: flex-start;
-            width: 80%;
-            margin-top: 20px;
-        }
-
-        .text-section {
-            width: 45%;
-            text-align: left;
-            font-size: 1.2rem;
-            color: #333;
-            background-color: rgba(255, 255, 255, 0.8); /* Fondo blanco translúcido */
+        .contenido {
+            width: 90%;
+            max-width: 1200px;
+            margin: auto;
             padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
 
-        .text-section p {
-            margin-bottom: 1.5rem;
-            line-height: 1.6;
+        .texto {
+            font-size: 1.2em;
+            text-align: left;
+            line-height: 1.5;
+            margin-bottom: 20px;
         }
 
-        .image-section {
-            width: 45%;
-            display: flex;
-            flex-wrap: wrap;
+        .imagenes-contenedor {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Grid responsive */
             gap: 10px;
         }
 
-        .image-section img {
-            width: 48%;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        img {
+            width: 100%;
+            height: auto;
         }
 
-        #boton-regalo {
-            padding: 15px 30px;
-            font-size: 20px;
-            color: white;
-            background-color: #d23669;
+        button {
+            display: block;
+            margin: 20px auto;
+            padding: 10px 20px;
+            background-color: #ffcccb;
             border: none;
-            border-radius: 5px;
+            font-size: 1.2em;
             cursor: pointer;
-            margin-top: 30px;
         }
 
-        #boton-regalo:hover {
-            background-color: #b0305c;
+        #mensajeRegalo h2 {
+            font-size: 3em;
+            text-align: center;
         }
 
-        #regalo {
-            display: none;
-            color: #ff4081;
-            font-size: 2rem;
-            margin-top: 20px; /* Ajustado para que el texto esté más arriba */
-            line-height: 1.4;
-            text-align: center; /* Centrar texto y contenido */
+        #mensajeRegalo p {
+            text-align: center;
+            font-size: 1.5em;
         }
 
-        #regalo p {
-            margin: 0;
-            padding: 10px 0;
-        }
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 2em;
+            }
 
-        #regalo p:first-child {
-            font-size: 2.5rem;
-            font-weight: bold;
-        }
+            .texto {
+                font-size: 1em;
+            }
 
-        #regalo p:nth-child(2) {
-            font-size: 2rem;
-        }
+            img {
+                width: 100%;
+            }
 
-        #final-image {
-            display: none;
-            margin: 20px auto; /* Centrar imagen y añadir margen */
-            width: 300px;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            #mensajeRegalo h2 {
+                font-size: 2em;
+            }
+
+            #mensajeRegalo p {
+                font-size: 1.2em;
+            }
         }
     </style>
 </head>
 <body>
-
-    <h1 id="titulo">¡Felices 10 meses!</h1>
-
-    <div class="content" id="contenido">
-        <div class="text-section">
-            <p>Felices 10 meses mi princesa bonita, primero que nada muchas gracias por todo lo que haces por mí, por ser mi novia por amarme por todo gracias, sé que pues en estas últimas semanas algunos días han pasado cosas feas y así pero nuestro amor que nos tenemos es mucho más grande que las cosas que pasamos y no pasen más cosas feas porque me de mello nuestro amor es más grande que todo y ya estamos bien y hay que seguir así de bonitos y cariñositos, demos todo de nosotros mi amor, me encanta que seamos ositos cariñositos estemos así siempre pofavo ositos cariñositos, cada mes a tu lado es lo mejor es lo mas bonito, cada cosa que hacemos juntos lo aprecio mucho somos bonitos.</p>
-            <p>Eres la novia más bonita del mundo y lo más importante para mí.</p>
-            <p>Eres el amor de mi vida :)</p>
-            <p>Te amo mucho mi vida 🩷</p>
+    <h1>¡Felices 10 meses!</h1>
+    <div class="contenido">
+        <div class="texto">
+            Felices 10 meses mi princesa bonita, primero que nada muchas gracias por todo lo que haces por mí, por ser mi novia, por amarme, por todo, gracias. Sé que pues en estas últimas semanas algunos días han pasado cosas feas y así, pero nuestro amor que nos tenemos es mucho más grande que las cosas que pasamos y no pasen más cosas feas porque me da miedo. Nuestro amor es más grande que todo y ya estamos bien, y hay que seguir así de bonitos y cariñositos. Demos todo de nosotros, mi amor. Me encanta que seamos ositos cariñositos, estemos así siempre, pofavo ositos cariñositos. Cada mes a tu lado es lo mejor, es lo más bonito, cada cosa que hacemos juntos lo aprecio mucho. Somos bonitos. Eres la novia más bonita del mundo y lo más importante para mí. Eres el amor de mi vida :) Te amo mucho mi vida 🩷.
         </div>
 
         <div class="image-section">
@@ -129,26 +101,21 @@
         </div>
     </div>
 
-    <button id="boton-regalo">Dale clic mi vida</button>
+      <button id="regalo" onclick="mostrarRegalo()">Dale clic mi vida</button>
 
-    <div id="regalo">
-        <p>Felices 10 meses mi vida</p>
-        <p>Eres mi princesa piquiñita 🩷</p>
+        <div id="mensajeRegalo" style="display: none;">
+            <h2>Felices 10 meses mi vida</h2>
+            <p>Eres mi princesa piquiñita 🩷</p>
         <img id="final-image" src="imagenes/44CE88E5-9C56-4D69-B230-3BEA15CAF5A4.jpg" alt="Piquiñita" width="300" height="400" class="final-image">
         <p>Te amo mi piquiñita 🩷</p>
+        </div>
     </div>
 
     <script>
-        document.getElementById("boton-regalo").addEventListener("click", function() {
-            // Ocultamos todos los elementos anteriores
-            document.getElementById("titulo").style.display = "none";
-            document.getElementById("contenido").style.display = "none";
-            this.style.display = "none"; // Oculta el botón también
-
-            // Mostramos el mensaje final y la imagen
-            document.getElementById("regalo").style.display = "block";
-            document.getElementById("final-image").style.display = "block";
-        });
+        function mostrarRegalo() {
+            document.querySelector(".contenido").style.display = "none";
+            document.querySelector("#mensajeRegalo").style.display = "block";
+        }
     </script>
 </body>
 </html>
